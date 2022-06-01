@@ -1,0 +1,88 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.bg-e7 {
+    background-color: #E7E7E7;
+}
+
+.bg-1e {
+    background-color: #1e1e1e;
+}
+
+.bg-f {
+    background-color: #fff;
+}
+
+.bg-red {
+    background-color: #DE443D !important; 
+}
+
+.bg-gray {
+    background-color: #535353;
+}
+
+.bg-lightgray {
+    background-color: #CACAC0;
+}
+
+.bg-tan {
+    background-color: #EDEDE4;
+}
+
+.bg-yellow {
+    background-color: #E2E254;
+}
+
+.bg-e {
+    background-color: #EEE;
+}
+
+.hex-e7 {
+    color: #E7E7E7;
+}
+
+.hex-f {
+    color: white;
+}
+
+.hex-red {
+    color: #DE443D;
+}
+
+.hex-1e {
+    color: #1e1e1e;
+}
+
+.hex-gray {
+    color: #262626;
+}
+
+.hex-tan {
+    color: #EDEDE4;
+}
+
+.hex-5 {
+    color: #555;
+}
+
+.hex-8 {
+    color: #888;
+}
+
+.mh-400p {
+    min-height: 300px;
+}
+
+.markerFont {
+    font-family: 'Permanent Marker', cursive;
+}
+
+.rubikFont {
+    font-family: 'Rubik', sans-serif;
+}
+
+.round {
+    border-radius: 20px;
+}

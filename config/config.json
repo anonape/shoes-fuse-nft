@@ -1,0 +1,13 @@
+{
+    "CONTRACT_ADDRESS": "0xeeb60c6b7a04dbfd9313b289c7b65100199e4e98",
+    "SCAN_LINK": "https://etherscan.io/address/0xeeb60c6b7a04dbfd9313b289c7b65100199e4e98",
+    "NETWORK": {
+      "NAME": "Ethereum Mainnet",
+      "SYMBOL": "ETH",
+      "ID": 1
+    },
+    "SYMBOL": "SHOESFUSE",
+    "GAS_LIMIT": 285000,
+    "MARKETPLACE_LINK": "https://opensea.io/collection/shoes-fuse"
+  }
+  

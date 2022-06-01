@@ -1,0 +1,293 @@
+
+#mainImage {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url('../images/out.gif');
+  height: 600px;
+  background-position: top left;
+}
+
+#mainText {
+  text-align: right;
+  margin: auto;
+}
+
+.rightAlign {
+  margin-left: auto; 
+  margin-right: 0;
+}
+
+.card-block{
+	  height: calc(20vw);
+    width: calc(20vw);
+	  background-position: center;
+	  background-size: cover;
+    display: inline-block;
+    border: 1px solid white;
+    margin: 5px;
+}
+
+.boxSize {
+    padding: auto;
+    width: 280px;
+    height: 50px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.button {
+    border: 0px solid #CE5045;
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+}
+  
+.button:hover {
+    transform: scale(1.1);
+}
+
+
+.scrolling-wrapper{
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+
+@media (max-width: 767px) {
+    .b-width {
+        width: 200px;
+    }
+}
+
+@-webkit-keyframes banner {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+}
+  
+@keyframes banner {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+}
+@-webkit-keyframes banner-r {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+}
+@keyframes banner-r {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+}
+  
+.banner {
+    font-size: 6vw;
+    height: 10vw;
+    overflow: hidden;
+    position: relative;
+    width: 103%;
+    font-weight: bold;
+    font-style: italic;
+}
+  
+.track {
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    transition: background-color 300ms ease, color 300ms ease;
+    white-space: nowrap;
+    background-color: #E2E254;
+    color: black;
+    padding: 0.8vw 0px;
+}
+
+.textMove {
+    -webkit-animation: banner 120000ms linear infinite;
+            animation: banner 120000ms linear infinite;
+    align-items: center;
+    display: inline-flex;
+    will-change: transform;
+}
+
+.textMoveR {
+  /* -webkit-animation: banner-r 120000ms linear infinite;
+  animation: banner-r 120000ms linear infinite; */
+  align-items: center;
+  display: inline-flex;
+  will-change: transform;
+}
+
+.textMoveR3 {
+  -webkit-animation: banner-r 60000ms linear infinite;
+  animation: banner-r 60000ms linear infinite;
+  align-items: center;
+  display: inline-flex;
+  will-change: transform;
+}
+
+.track:hover {
+    background-color: #1e1e1e;
+    color: #EDEDE4;
+}
+
+
+@keyframes confetti-slow {
+  0% {
+      transform: translate3d(0, 0, 0) rotateX(0) rotateY(0);
+  }
+  100% {
+      transform: translate3d(25px, 105vh, 0) rotateX(360deg) rotateY(180deg);
+  }
+}
+@keyframes confetti-medium {
+  0% {
+      transform: translate3d(0, 0, 0) rotateX(0) rotateY(0);
+  }
+  100% {
+      transform: translate3d(100px, 105vh, 0) rotateX(100deg) rotateY(360deg);
+  }
+}
+@keyframes confetti-fast {
+  0% {
+      transform: translate3d(0, 0, 0) rotateX(0) rotateY(0);
+  }
+  100% {
+      transform: translate3d(-50px, 105vh, 0) rotateX(10deg) rotateY(250deg);
+  }
+}
+
+.confetti-container {
+  perspective: 700px;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.confetti {
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  border-radius: 0%;
+}
+.confetti--animation-slow {
+  animation: confetti-slow 5s linear 1 forwards;
+}
+.confetti--animation-medium {
+  animation: confetti-medium 3s linear 1 forwards;
+}
+.confetti--animation-fast {
+  animation: confetti-fast 2s linear 1 forwards;
+}
+
+
+@media (max-width: 767px) {
+  #mainImage {
+      height: 300px;
+      background-position: center;
+  }
+  #mainText {
+      text-align: center;
+      margin: auto;
+  }
+  .rightAlign {
+    margin: auto;
+    text-align: center;
+  }
+}
+
+.custombtn {
+	font-size: 45px;
+  text-align: center;
+	max-width: 388px;  
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  transition: all .3s ease 0s;
+}
+
+.blink {
+  animation: blinker 1s ease-in-out infinite;
+}
+
+@keyframes blinker {
+  50% {
+    background-color:rgba(0, 0, 0, 0);
+  }
+}
+
+.custombtn:hover {
+  animation-play-state: paused;
+  transform: translateY(-5px);
+}
+
+.custombtn:active {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+
+.img {
+  min-width: 200px;
+  min-height: 200px;
+  width: calc(100vw/4.2);
+  height: calc(100vw/4.2);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.hoverText {
+  color: #E9EDC8;
+  text-shadow: -2px 2px #86D8B9, -3px 3px #86D8B9, -4px 4px #86D8B9;
+  animation: numAnim 700ms cubic-bezier(1, 0, 0, 1) alternate infinite;
+}
+.hoverText:nth-of-type(2) {
+  animation-delay: -100ms;
+}
+.hoverText:nth-of-type(3) {
+  animation-delay: -200ms;
+}
+.hoverText:nth-of-type(4) {
+  animation-delay: -300ms;
+}
+.hoverText:nth-of-type(5) {
+  animation-delay: -400ms;
+}
+.hoverText:nth-of-type(6) {
+  animation-delay: -500ms;
+}
+.hoverText:nth-of-type(7) {
+  animation-delay: -600ms;
+}
+.hoverText:nth-of-type(8) {
+  animation-delay: -700ms;
+}
+@keyframes numAnim {
+  to {
+    color: #E9EDC8;
+    transform: translate(5px, -5px);
+    text-shadow: -1px 1px #F4BBBF, -2px 2px #F4BBBF,
+      -3px 3px #F4BBBF, -4px 4px #F4BBBF,
+      -5px 5px #F4BBBF, -6px 6px #F4BBBF,
+      -7px 7px #F4BBBF, -8px 8px #F4BBBF,
+      -9px 9px #F4BBBF, -10px 10px #F4BBBF;
+  }
+}
